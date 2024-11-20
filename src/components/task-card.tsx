@@ -1,3 +1,4 @@
+import { CircleCheck, CircleX } from "lucide-react";
 import { Task } from "../types";
 
 interface TaskCardProps {
@@ -37,7 +38,7 @@ export default function TaskCard({ task }: TaskCardProps) {
               : "bg-gray-100 text-gray-600"
           }`}
         >
-          {/* {task.completed ? <CircleCheck> : <CircleX /> } */}
+          {task.completed ? <CircleCheck /> : <CircleX />}
         </button>
       </div>
 
